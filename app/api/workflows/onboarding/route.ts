@@ -41,6 +41,8 @@ export const { POST } = serve<InitialData>(async (context) => {
   const { email,fullName } = context.requestPayload
 
   // welcome email
+
+  console.log('welcome message sending as email with params',fullName,email)
   await context.run("new-signup", async () => {
     await emailSender({
       email,message:"Welcome to the platform",name:fullName
