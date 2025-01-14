@@ -2,6 +2,7 @@
 const config ={
     env:{
         apiEndpoint:process.env.NEXT_PUBLIC_API_ENDPOINT!,
+        prodApiEndpoint:process.env.NEXT_PUBLIC_PROD_API_ENDPOINT!,
         imagekit:{
             publicKey:process.env.NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY!,
             urlEndpoint:process.env.NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT!,
@@ -14,6 +15,11 @@ const config ={
             qstashUrl:process.env.QSTASH_URL!,
             qsatshToken:process.env.QSTASH_TOKEN!,
         },
+        email:{
+            serviceId:process.env.NEXT_PUBLIC_SERVICE_ID!,
+            templateId:process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+            key:process.env.NEXT_PUBLIC_PUBLIC_KEY!,
+        }
     }
 }
 
